@@ -11,7 +11,7 @@ export class AuthService {
         private readonly jwtService: JwtService
     ) {}
 
-    async login(username: string, pass: string): Promise<{}> {
+    async login(username: string, pass: string): Promise<{accessToken: string}> {
         const user = await this.userService.findOne(username);
 
         if (!user || !bcrypt.compareSync(pass, user.password)) {

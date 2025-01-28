@@ -1,0 +1,6 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFiYyIsInN1YiI6NywiaWF0IjoxNzM4MDg2NjEzfQ.5J_PX_h7XYmeq-3AdyA0DFG7wRDFxx8kwgiNuJ6lZ1M
+
+### Me
+GET http://localhost:3000/me
+Content-Type: application/json
+Authorization: Bearer {{token}}
