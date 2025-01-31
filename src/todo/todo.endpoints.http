@@ -1,0 +1,30 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFiYyIsInN1YiI6NywiaWF0IjoxNzM4MDg2NjEzfQ.5J_PX_h7XYmeq-3AdyA0DFG7wRDFxx8kwgiNuJ6lZ1M
+
+### Create a todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Buy milk"
+}
+
+### Get all todos
+GET http://localhost:3000/todos
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+### Update a todo
+PUT http://localhost:3000/todos/2
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Buy milk and eggs"
+}
+
+### Delete a todo
+DELETE http://localhost:3000/todos/2
+Content-Type: application/json
+Authorization: Bearer {{token}}
