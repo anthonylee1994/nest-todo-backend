@@ -17,6 +17,7 @@ describe("AuthService", () => {
         password: bcrypt.hashSync("password123", 10),
         createdAt: new Date(),
         updatedAt: new Date(),
+        todos: [],
     };
 
     const mockUserService = {
